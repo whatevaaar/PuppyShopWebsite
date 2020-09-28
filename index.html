@@ -12,7 +12,7 @@
   <title>PuppyShop</title>
 
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
@@ -61,31 +61,14 @@
             <nav class="main-menu">
               <ul>
                 <li class="current-list-item"><a href="#">Inicio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li>
-                  <a href="#">Pages</a>
-                  <ul class="sub-menu">
-                    <li><a href="404.html">404 page</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Check Out</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                  </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                  <a href="shop.html">Shop</a>
-                  <ul class="sub-menu">
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="checkout.html">Check Out</a></li>
-                    <li><a href="single-product.html">Single Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                  </ul>
-                </li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="#">Mi Negocio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
                 <li>
                   <div class="header-icons">
-                    <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="login.html" id="enlace-iniciar-sesion">Iniciar Sesión</a>
+                    <a hidden class="shopping-cart" id="icono-carrito" href="cart.html"><i
+                        class="fas fa-shopping-cart"></i></a>
                     <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
                   </div>
                 </li>
@@ -187,7 +170,7 @@
 
   <!-- product section -->
   <div class="product-section">
-    <div class="container">
+    <div class="container" id="contenedor-productos">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 text-center">
           <div class="section-title">
@@ -306,7 +289,7 @@
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="abt-text">
-            <p class="top-sub">Desde 1999</p>
+            <p class="top-sub">Desde 2020</p>
             <h2>Puppy<span class="orange-text">Shop</span></h2>
             <p>
               Etiam vulputate ut augue vel sodales. In sollicitudin neque et
@@ -319,7 +302,6 @@
               Sapiente facilis illo repellat veritatis minus, et labore minima
               mollitia qui ducimus.
             </p>
-            <a href="about.html" class="boxed-btn mt-4">know more</a>
           </div>
         </div>
       </div>
@@ -340,9 +322,9 @@
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="footer-box about-widget">
-            <h2 class="widget-title">Sobre Nosotros</h2>
+            <h2 class="widget-title">Sobre nosotros</h2>
             <p>
-              Ut enim ad minim veniam perspiciatis unde omnis iste natus error
+              ut enim ad minim veniam perspiciatis unde omnis iste natus error
               sit voluptatem accusantium doloremque laudantium, totam rem
               aperiam, eaque ipsa quae.
             </p>
@@ -352,29 +334,26 @@
           <div class="footer-box get-in-touch">
             <h2 class="widget-title">Contáctanos</h2>
             <ul>
-              <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-              <li>support@fruitkha.com</li>
+              <li>34/8, east hukupara, gifirtok, sadan.</li>
+              <li>support@puppyshop.dog</li>
               <li>+00 111 222 3333</li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="footer-box pages">
-            <h2 class="widget-title">Páginas</h2>
+            <h2 class="widget-title">Ciudades</h2>
             <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="about.html">Acerca</a></li>
-              <li><a href="services.html">Tienda</a></li>
-              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="index.html">CDMX</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="footer-box subscribe">
             <h2 class="widget-title">Subscríbete</h2>
-            <p>Subscribe to our mailing list to get the latest updates.</p>
+            <p>Subscríbete para recibir ofertas especiales y promociones.</p>
             <form action="index.html">
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="email" />
               <button type="submit">
                 <i class="fas fa-paper-plane"></i>
               </button>
@@ -392,9 +371,9 @@
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <p>
-            Copyrights &copy; 2020 -
-            <a href="https://databird.tech/">Databird</a>, All Rights
-            Reserved.
+            copyrights &copy; 2020 -
+            <a href="https://databird.tech/">databird</a>, all rights
+            reserved.
           </p>
         </div>
         <div class="col-lg-6 text-right col-md-12">
@@ -422,7 +401,17 @@
     </div>
   </div>
   <!-- end copyright -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+  <script src="assets/js/firebase.js"></script>
+  <script src="assets/js/index.js"></script>
   <!-- jquery -->
   <script src="assets/js/jquery-1.11.3.min.js"></script>
   <!-- bootstrap -->

@@ -6,31 +6,31 @@ Author: Imran Hossain
 Author URI: https://imransdesign.com/
 Version: 1.0
 */
+
 /* -----------------------------------------------------------------------------
 
 # Base - Genral & Typography
 
 ----------------------------------------------------------------------------- */
-.img-logo{
-  max-height: 3rem;
+
+.img-logo {
+  max-height: 4rem;
 }
 
-.contenido-lista{
+.contenido-lista {
   color: #fff;
 }
 
-.product-section{
-  margin-top: 11rem;
+.product-section {
+  margin-top: 5rem;
 }
 
-.img-about{
+.img-about {
   position: relative;
   top: -11rem;
 }
 
-.abt-section{
-
-}
+.abt-section {}
 
 html {
   font-size: 14px;
@@ -66,24 +66,14 @@ a:hover {
   text-decoration: none;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0 0 1.25rem 0;
   color: #D25472;
 }
 
-h1:last-child, .h1:last-child,
-h2:last-child, .h2:last-child,
-h3:last-child, .h3:last-child,
-h4:last-child, .h4:last-child,
-h5:last-child, .h5:last-child,
-h6:last-child, .h6:last-child {
+h1:last-child, .h1:last-child, h2:last-child, .h2:last-child, h3:last-child, .h3:last-child, h4:last-child, .h4:last-child, h5:last-child, .h5:last-child, h6:last-child, .h6:last-child {
   margin: 0;
 }
 
@@ -184,6 +174,7 @@ p:last-child {
 # All Common Styles
 
 ----------------------------------------------------------------------------- */
+
 .loader {
   bottom: 0;
   height: 100%;
@@ -496,7 +487,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .breadcrumb-bg {
-  background-image: url(../img/breadcrumb-bg.jpg);
+  background-image: url(../img/breadcrumb-bg.png);
 }
 
 .breadcrumb-text p {
@@ -509,15 +500,16 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 .breadcrumb-text h1 {
   font-size: 50px;
   font-weight: 900;
-  color: #fff;
+  color: #000000ab;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 5rem;
 }
 
 .breadcrumb-section {
   padding: 150px 0;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 25%;
   position: relative;
   z-index: 1;
   background-attachment: fixed;
@@ -531,9 +523,10 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: #07212e;
   z-index: -1;
   opacity: 0.8;
+  border-bottom: solid;
+  border-width: .15rem;
 }
 
 /* -----------------------------------------------------------------------------
@@ -541,6 +534,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 # Header Styles
 
 ----------------------------------------------------------------------------- */
+
 ul.navbar-nav li.nav-item a.nav-link, ul.navbar-nav li.nav-item.active a.nav-link {
   color: #D25472;
 }
@@ -583,7 +577,7 @@ nav.main-menu ul li a {
   padding: 15px;
 }
 
-nav.main-menu ul > li {
+nav.main-menu ul>li {
   position: relative;
 }
 
@@ -617,7 +611,7 @@ nav.main-menu ul ul.sub-menu li a {
   font-size: 13px;
 }
 
-nav.main-menu ul > li:hover ul {
+nav.main-menu ul>li:hover ul {
   opacity: 1;
   visibility: visible;
 }
@@ -626,7 +620,7 @@ nav.main-menu ul li:last-child a {
   display: inline-block;
 }
 
-nav.main-menu > ul li:last-child {
+nav.main-menu>ul li:last-child {
   float: right;
 }
 
@@ -647,7 +641,7 @@ ul.sub-menu li:last-child {
 }
 
 .mean-bar a.meanmenu-reveal {
-  background-color: #fff;
+  background-color: #fff0;
 }
 
 .main-menu-wrap {
@@ -681,7 +675,7 @@ ul.sub-menu li:last-child {
   padding: 8px 8px 6px;
 }
 
-nav.mean-nav > ul > li:first-child > a {
+nav.mean-nav>ul>li:first-child>a {
   border-top: none;
 }
 
@@ -691,11 +685,9 @@ nav.mean-nav > ul > li:first-child > a {
   padding: 10px;
 }
 
-.site-logo {
-  padding: 6px 0;
-}
+.site-logo {}
 
-.top-header-area.sepherate-header ul li > a, .top-header-area.sepherate-header .header-icons a {
+.top-header-area.sepherate-header ul li>a, .top-header-area.sepherate-header .header-icons a {
   color: #D25472;
 }
 
@@ -710,11 +702,11 @@ nav.main-menu ul ul.sub-menu li a {
   font-weight: 600;
 }
 
-nav.main-menu ul li.current-list-item > a {
+nav.main-menu ul li.current-list-item>a {
   color: #D25472;
 }
 
-nav.main-menu li:hover > a {
+nav.main-menu li:hover>a {
   color: #D25472;
 }
 
@@ -874,6 +866,7 @@ a.mobile-show {
 # Footer Styles
 
 ----------------------------------------------------------------------------- */
+
 .single-logo-item img {
   max-width: 180px;
   margin: 0 auto;
@@ -1030,6 +1023,7 @@ h2.widget-title:after {
 # Hover Styles
 
 ----------------------------------------------------------------------------- */
+
 a.navbar-brand {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1210,8 +1204,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #D25472;
-  color: #0eb3a1;
+  background-color: #0eb3a1;
+  color: #fff;
 }
 
 div.owl-controls, .owl-controls div {
@@ -1394,6 +1388,7 @@ a.mobile-show.search-bar-icon:hover {
 # Hero Styles
 
 ----------------------------------------------------------------------------- */
+
 .hero-bg {
   background-image: url(../img/banner.png);
   background-size: contain;
@@ -1488,12 +1483,12 @@ html, body {
 }
 
 input[type="submit"] {
-  background-color: #0eb3a1;
+  background-color: #fff0;
   color: #D25472;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 15px;
-  border: none !important;
+  border: 2px solid #0eb3a1;
   cursor: pointer;
   padding: 15px 25px;
   border-radius: 3px;
@@ -1582,6 +1577,7 @@ div.owl-controls, .owl-controls div {
 # List Styles
 
 ----------------------------------------------------------------------------- */
+
 .list-section {
   background-color: #04B7ACB5;
   padding-top: 3rem;
@@ -1627,6 +1623,7 @@ div.owl-controls, .owl-controls div {
 # News Styles
 
 ----------------------------------------------------------------------------- */
+
 .news-bg-1 {
   background-image: url(../img/latest-news/news-bg-1.jpg);
 }
@@ -1831,7 +1828,7 @@ span.comment-date {
   margin-bottom: 10px;
 }
 
-.comment-template > p {
+.comment-template>p {
   opacity: 0.7;
   margin-bottom: 30px;
 }
@@ -1891,11 +1888,11 @@ span.comment-date {
   font-size: 15px;
 }
 
-.sidebar-section > div {
+.sidebar-section>div {
   margin-bottom: 60px;
 }
 
-.sidebar-section > div:last-child {
+.sidebar-section>div:last-child {
   margin-bottom: 0;
 }
 
@@ -1932,6 +1929,7 @@ span.comment-date {
 # Cart Banner Styles
 
 ----------------------------------------------------------------------------- */
+
 .cart-banner {
   background-color: #f5f5f5;
 }
@@ -2037,6 +2035,7 @@ span.comment-date {
 # Testimonial Styles
 
 ----------------------------------------------------------------------------- */
+
 .client-avater {
   margin-bottom: 20px;
 }
@@ -2082,6 +2081,7 @@ p.testimonial-body {
 # About Styles
 
 ----------------------------------------------------------------------------- */
+
 a.video-play-btn {
   position: absolute;
   background-color: #0eb3a1;
@@ -2147,6 +2147,7 @@ a.video-play-btn {
 # Shop Banner Styles
 
 ----------------------------------------------------------------------------- */
+
 .shop-banner {
   position: relative;
   background-color: #f5f5f5;
@@ -2185,6 +2186,7 @@ a.video-play-btn {
 # About Page Styles
 
 ----------------------------------------------------------------------------- */
+
 .feature-bg {
   position: relative;
   margin: 150px 0;
@@ -2281,6 +2283,7 @@ ul.social-link-team li a {
 # Contact Page Styles
 
 ----------------------------------------------------------------------------- */
+
 .form-title {
   margin-bottom: 25px;
 }
@@ -2405,6 +2408,7 @@ ul.social-link-team li a {
 # Shop Page Styles
 
 ----------------------------------------------------------------------------- */
+
 .product-filters {
   margin-bottom: 80px;
 }
@@ -2741,7 +2745,7 @@ table.order-details tbody td {
   padding: 15px;
 }
 
-.order-details-wrap > a {
+.order-details-wrap>a {
   margin-top: 30px;
 }
 
@@ -2761,6 +2765,7 @@ table.order-details tbody td {
 # 404 Page Styles
 
 ----------------------------------------------------------------------------- */
+
 .error-text i {
   font-size: 90px;
   margin-bottom: 30px;

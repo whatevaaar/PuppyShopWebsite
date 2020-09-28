@@ -70,7 +70,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0 0 1.25rem 0;
-  color: #D25472;
+  color: #0eb3a1;
 }
 
 h1:last-child, .h1:last-child, h2:last-child, .h2:last-child, h3:last-child, .h3:last-child, h4:last-child, .h4:last-child, h5:last-child, .h5:last-child, h6:last-child, .h6:last-child {
@@ -414,7 +414,7 @@ p:last-child {
 }
 
 .orange-text {
-  color: #0eb3a1;
+  color: #D25472;
 }
 
 .blue-bg {
@@ -882,15 +882,15 @@ a.mobile-show {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 10rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .footer-area {
-  background-color: #D25472;
+  background-color: #0eb3a1;
   color: #ffffff;
   padding: 5rem 0;
-  border: #0eb3a1;
-  border-width: 0.25rem;
+  border: #D25472;
+  border-width: 0.2rem;
   border-top-style: solid;
   border-bottom-style: dashed;
 }
@@ -909,7 +909,7 @@ h2.widget-title:after {
   bottom: 0;
   width: 20px;
   height: 2px;
-  background-color: #0eb3a1;
+  background-color: #D25472;
   content: "";
 }
 
@@ -948,7 +948,7 @@ h2.widget-title:after {
 .footer-box.subscribe form button {
   width: 20%;
   border: none;
-  background-color: #0eb3a1;
+  background-color: #D25472;
   color: #ffffff;
   padding: 14px 0;
   border-top-right-radius: 3px;
@@ -961,7 +961,7 @@ h2.widget-title:after {
 }
 
 .copyright {
-  background-color: #D25472;
+  background-color: #0eb3a1;
 }
 
 .copyright p {
@@ -973,7 +973,7 @@ h2.widget-title:after {
 }
 
 .copyright a {
-  color: #0eb3a1;
+  color: #D25472;
   font-weight: 700;
 }
 
@@ -2300,12 +2300,12 @@ ul.social-link-team li a {
 .contact-form form p input[type=text], .contact-form form p input[type=tel], .contact-form form p input[type=email] {
   width: 49%;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #0eb3a18a;
   border-radius: 3px;
 }
 
 .contact-form form p textarea {
-  border: 1px solid #ddd;
+  border: 1px solid #0eb3a18a;
   padding: 15px;
   height: 200px;
   border-radius: 3px;
@@ -2314,7 +2314,7 @@ ul.social-link-team li a {
 }
 
 .contact-form-wrap {
-  background-color: #FBFBFB;
+  background-color: #FFC0F21A;
   padding: 45px 30px;
   border-radius: 5px;
 }
@@ -2755,7 +2755,7 @@ table.order-details tbody td {
 
 .single-product-item {
   -webkit-box-shadow: 0 0 20px #e4e4e4;
-  box-shadow: 0 0 20px #e4e4e4;
+  box-shadow: 0 0 20px #0606064f;
   padding-bottom: 50px;
   border-radius: 5px;
 }
